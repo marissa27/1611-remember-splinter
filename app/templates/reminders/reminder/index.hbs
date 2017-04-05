@@ -1,0 +1,10 @@
+<div class="reminder-item">
+  <p name="title" class="reminder-title">{{model.title}}</p>
+  <p name="body" class="reminder-body">{{model.body}}</p>
+  <p name="date" class="reminder-date">{{model.date}}</p>
+</div>
+
+<button {{action 'editReminder' on="click"}}>Edit your Reminder</button>
+<button {{action 'submitReminder'}}>Save</button>
+
+{{outlet}}
